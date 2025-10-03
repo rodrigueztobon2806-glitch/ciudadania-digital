@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ciudadanía Digital · Micrositio (Versión robusta)</title>
+  <meta name="description" content="Micrositio alineado a la rúbrica: información digital, procesos económicos, derechos y seguridad, con ejemplos contextualizados y reflexión crítica. Incluye citas en texto y referencias." />
+  <style>
+    :root{
+      --bg:#0f172a; --card:#0b1222; --muted:#94a3b8; --text:#e5e7eb;
+      --accent:#8b5cf6; --accent2:#22d3ee; --good:#10b981; --warn:#f59e0b; --bad:#ef4444;
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,"Noto Sans",sans-serif;color:var(--text);
+      background:radial-gradient(1200px 800px at 100% -10%, #1f2937 0%, #0b1020 40%, #020617 100%);}
+    .wrap{max-width:1100px;margin:auto;padding:24px}
+    .nav{position:sticky;top:0;background:rgba(2,6,23,.7);backdrop-filter: blur(10px);border-bottom:1px solid #1e293b;z-index:40}
+    .nav .inner{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:1100px;margin:auto;padding:10px 24px}
+    .brand{display:flex;gap:10px;align-items:center}
+    .logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;font-weight:900}
+    .menu a{color:var(--text);text-decoration:none;padding:8px 10px;border-radius:12px;font-size:14px}
+    .menu a:hover{background:#0a1220}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:40px 0 12px}
+    .badge{display:inline-flex;gap:8px;align-items:center;border:1px solid #243045;padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    h1{font-size:40px;margin:10px 0 0}
+    h2{font-size:26px;margin:6px 0 10px}
+    h3{font-size:20px;margin:8px 0}
+    p{line-height:1.7}
+    .card{background:linear-gradient(180deg,var(--card) 0%, #0a0f1c 100%);border:1px solid #1f2937;border-radius:var(--radius);padding:20px;margin:14px 0}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    ul{margin:8px 0 8px 18px}
+    .note{border-left:4px solid var(--accent);padding:10px 14px;background:#0a1220;border-radius:12px;color:var(--muted)}
+    .pill{display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid #1f2937;color:var(--muted);font-size:12px}
+    .kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .kpi>div{background:#0a1220;border:1px solid #1f2937;border-radius:14px;padding:12px}
+    .list-check li{margin-bottom:6px}
+    a{color:#a5b4fc}
+    @media (max-width:960px){.hero{grid-template-columns:1fr}.grid3,.grid2{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="nav" aria-label="Navegación principal">
+    <div class="inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">CD</div>
+        <span>Ciudadanía Digital · Micrositio</span>
+      </div>
+      <nav class="menu" aria-label="Secciones del sitio">
+        <a href="#inicio">Inicio</a>
+        <a href="#info">Información digital</a>
+        <a href="#economia">Procesos económicos</a>
+        <a href="#derechos">Derechos y seguridad</a>
+        <a href="#reflexion">Reflexión</a>
+        <a href="#referencias">Referencias</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="inicio" class="hero">
+      <div>
+        <span class="badge">Módulo 2 · Apropiaciones digitales</span>
+        <h1>Ciudadanía digital en la práctica cotidiana</h1>
+        <p>
+          Micrositio académico que organiza de forma jerárquica los conceptos clave de la ciudadanía digital para su aplicación en contextos sociales, económicos, culturales y políticos.
+          Incluye ejemplos contextualizados, medidas de seguridad y reflexión crítica con citas en texto.
+        </p>
+        <div class="kpi" role="list" aria-label="Ficha del estudiante">
+          <div role="listitem"><strong>Estudiante</strong><br/>Ricardo José Rodríguez Tobón</div>
+          <div role="listitem"><strong>Código</strong><br/>136124</div>
+          <div role="listitem"><strong>Curso</strong><br/>Ciudadanía Digital</div>
+        </div>
+        <p><span class="pill">Diseño accesible y responsivo</span></p>
+      </div>
+      <aside class="card" aria-label="Objetivo de aprendizaje">
+        <h3>Objetivo</h3>
+        <p class="note">Aplicar y analizar los conceptos del módulo mediante una representación clara que muestre relaciones entre ideas y su impacto en la vida cotidiana.</p>
+      </aside>
+    </section>
+
+    <section id="info" class="card">
+      <h2>Información digital: alfabetismo, comunicación y netiqueta</h2>
+      <p>
+        El <strong>alfabetismo digital</strong> abarca localizar, evaluar y crear información con criterios de calidad y ética (<em>Cabero-Almenara & Llorente-Cejudo, 2020</em>).
+        La <strong>comunicación digital</strong> potencia la colaboración siempre que se elijan canales adecuados y se apliquen normas de <strong>netiqueta</strong> que favorezcan claridad y respeto
+        (<em>Livingstone, Stoilova, & Nandagiri, 2019</em>).
+      </p>
+      <div class="note"><strong>Ejemplo:</strong> antes de reenviar una alerta en WhatsApp, verificar si medios confiables y organismos oficiales la confirman.</div>
+    </section>
+
+    <section id="economia" class="card">
+      <h2>Procesos económicos digitales: economía colaborativa y comercio electrónico</h2>
+      <p>
+        La <strong>economía colaborativa</strong> facilita el uso compartido de bienes y servicios mediante plataformas digitales, con beneficios y riesgos.
+        El <strong>comercio electrónico</strong> transforma la compra‑venta (B2B, B2C, C2C) al permitir comparación de precios y personalización (<em>Tapscott, 2015</em>).
+      </p>
+    </section>
+
+    <section id="derechos" class="card">
+      <h2>Derechos digitales y seguridad en línea</h2>
+      <p>
+        El ejercicio ciudadano integra <strong>derechos</strong> como la privacidad, la protección de datos y la libertad de expresión,
+        junto con <strong>deberes</strong> de respeto y legalidad. La protección de datos personales y prácticas de ciberseguridad reducen riesgos (<em>ONU, 2021</em>).
+      </p>
+    </section>
+
+    <section id="reflexion" class="card">
+      <h2>Reflexión personal</h2>
+      <p>
+        En mi práctica cotidiana equilibro el tiempo en línea, protejo mis cuentas con verificación en dos pasos y verifico la veracidad de los contenidos antes de difundirlos.
+        En economía digital compro en comercios confiables; en redes sociales aplico netiqueta, cito fuentes y reporto conductas dañinas.
+      </p>
+    </section>
+
+    <section id="referencias" class="card">
+      <h2>Referencias</h2>
+      <ul>
+        <li>Cabero-Almenara, J., & Llorente-Cejudo, C. (2020). Digital literacy and its dimensions in higher education. <em>Education in the Knowledge Society, 21</em>, 1–12. https://doi.org/10.14201/eks.22398</li>
+        <li>Livingstone, S., Stoilova, M., & Nandagiri, R. (2019). <em>Children’s data and privacy online: Growing up in a digital age</em>. London School of Economics and Political Science.</li>
+        <li>Organización de las Naciones Unidas. (2021). <em>Informe sobre derechos digitales y desarrollo humano</em>. Naciones Unidas. https://www.un.org/</li>
+        <li>Tapscott, D. (2015). <em>The digital economy</em> (anniversary ed.). McGraw-Hill.</li>
+        <li>Material del curso – Módulo 2: Apropiaciones digitales. (Año). [Guía del curso].</li>
+      </ul>
+    </section>
+
+    <footer class="wrap">
+      <p style="color:#94a3b8">© <span id="year"></span> Ricardo José Rodríguez Tobón · Micrositio académico.</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
